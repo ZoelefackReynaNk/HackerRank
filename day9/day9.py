@@ -1,3 +1,5 @@
+import time
+
 # Enter your code here. Read input from STDIN. Print output to STDOUT
 n = int(input())
 
@@ -30,6 +32,8 @@ if __name__ == '__main__':
                 # else:
                 #     break
                 querries.append(querry)
+                time.sleep(0.5)
+                break
                 
             except EOFError:
                 #querry = input()
@@ -39,4 +43,5 @@ if __name__ == '__main__':
             break      
     for i in range(len(querries)):
         searching(querries[i], book)
+        
         
