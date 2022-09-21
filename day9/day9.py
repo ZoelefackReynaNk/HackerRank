@@ -31,9 +31,13 @@ if __name__ == '__main__':
                 #     continue
                 # else:
                 #     break
-                querries.append(querry)
-                time.sleep(0.5)
-                break
+                #querries.append(querry)
+                time.sleep(0.1)
+                if querry:
+                     querries.append(querry)
+                     continue
+                else:
+                    break
                 
             except EOFError:
                 #querry = input()
