@@ -1,0 +1,17 @@
+def factorial(n):
+    if n == 1 or n == 0:
+        return 1
+    else:
+        return n*factorial(n-1)
+    # Write your code here
+
+if __name__ == '__main__':
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+    n = int(input().strip())
+
+    result = factorial(n)
+
+    fptr.write(str(result) + '\n')
+
+    fptr.close()
